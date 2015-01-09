@@ -730,13 +730,22 @@ color: #FFF;
 #header-links-inner {
 	display: table;
 	margin: 0 auto;
+        padding-top: 25px;
 }
 #header .header-links li {
 	float: left;
+        padding-right: 15px;
+        padding-left:  15px;
+        border-right: 1px solid grey;
+        line-height: 10px;
 }
+#header .header-links li:last-child {
+        border-right: none;
+}    
 #header .header-links > ul > li a{
 	color: #777;
-	padding: 25px 20px;
+        
+	/*padding: 25px 20px;*/
 }
 #header .header-links > ul > li.menu-parent > a:after {
 	position: relative;
@@ -774,6 +783,7 @@ color: #FFF;
 
 #pre-header .sub-menu li,
 #header .sub-menu li {
+       
 	float: none;
 	position: relative;
 }
@@ -790,12 +800,17 @@ color: #FFF;
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+        padding-left: 5px;
+        padding-right: 5px;
 }
 #header .menu > li.menu-hover > a,
 #header .menu > li.current_page_item > a, 
 #header .menu > li.current-menu-ancestor > a,
 #header .menu > li > a:hover {
-	color: #F33F3F;
+	/*color: #F33F3F;*/
+        border-bottom: 3px solid #007099;
+        padding-left: 5px;
+        padding-right: 5px;
 }
 .main-navigation:after {
 	clear: both;
